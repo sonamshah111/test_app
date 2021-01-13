@@ -10,9 +10,7 @@
   </head>
 
   <body>
-    <% flash.each do |msg_type, msg| %>
-      <%= flash[msg_type] %>
-    <% end %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
